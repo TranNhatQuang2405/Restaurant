@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="FinalProject" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>com.Model.Food</class>
+		<class>com.Model.FoodOrder</class>
+		<class>com.Model.Order</class>
+		<class>com.Model.User</class>
+		<class>com.Model.InfoOrder</class>
+		<class>com.Model.Manager</class>
+		<class>com.Model.Booking</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-44-198-204-136.compute-1.amazonaws.com:5432/d2kf7fpg87gei9"/>
+			<property name="javax.persistence.jdbc.user" value="bozquxzncwuswc"/>
+			<property name="javax.persistence.jdbc.password" value="ffc4c19fb435b52948a899310facb4c045a854e9147d93a340eb4226b07ee9d9"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
